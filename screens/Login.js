@@ -22,7 +22,7 @@ const Stack = createNativeStackNavigator();
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [respostaAwait, setRespostaAwait] = useState("");
+
 
 
   return (
@@ -45,7 +45,18 @@ export default function Login({ navigation }) {
             color: "white",
           }}
         >
-          Crie seu usuário
+         
+         Bem Vindo de volta!
+        </Text>
+        <Text
+          style={{
+            fontSize: 17,
+            fontWeight: "400",
+            color: "white",
+          }}
+        >
+         
+         Login
         </Text>
 
         <View style={styles.InsideContainer}>
@@ -77,8 +88,8 @@ export default function Login({ navigation }) {
             </View>
 
             <View style={{ alignItems: "center" }}>
-              <TouchableOpacity onPress={cadastroUser} style={styles.btnLogin}>
-                <Text style={styles.textLogin}>Cadastre-se</Text>
+              <TouchableOpacity style={styles.btnLogin}>
+                <Text style={styles.textLogin}>Entar</Text>
               </TouchableOpacity>
 
               <Text style={{ marginTop: 7, color: "grey" }}>
@@ -93,15 +104,6 @@ export default function Login({ navigation }) {
               </Text>
             </TouchableOpacity>
           </View>
-
-          {respostaAwait && (
-
-              <Text
-                style={{ fontSize: 16, textAlign: "center", marginTop: 30 , color: "green" }}>
-                {respostaAwait}
-              </Text>
-
-          )}
 
         </View>
       </ScrollView>
