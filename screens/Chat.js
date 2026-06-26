@@ -18,6 +18,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
 
+
 const Stack = createNativeStackNavigator();
 
 export default function Chat({ navigation }) {
@@ -52,9 +53,11 @@ export default function Chat({ navigation }) {
 
         <View style={styles.containerMain}>
           <Image
-            source={{ uri: "https://raw.githubusercontent.com/PeduZX/ReactNativeHIVE/refs/heads/main/frontend/assets/Gemini_Generated_Image_xgj9dkxgj9dkxgj9.png" }}
+            source={{ uri: "https://raw.githubusercontent.com/PeduZX/ReactNativeHIVE/refs/heads/master/assets/Gemini_Generated_Image_xgj9dkxgj9dkxgj9.png" }}
             style={styles.imagemBackground}
           />
+
+          
           <View style={styles.inputRow}>
             <TouchableOpacity style={styles.asideInput}>
               <Ionicons name="add-outline" size={25} color="white" />
